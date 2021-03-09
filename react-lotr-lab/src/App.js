@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import MovieDeets from "./MovieDeets.js";
+import Title from "./Title";
 
 const movieOne = {
   title: "The Fellowship of the Ring",
@@ -24,6 +25,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Title />
         <img src={logo} className="App-logo" alt="logo" />
 
         <MovieDeets
