@@ -2,23 +2,25 @@ import logo from './logo.svg';
 import './App.css';
 import Movie from './Movie'
 
-const Fellowship = {
-  title: "The Fellowship of the Ring",
-  hours: 2,
-  minutes: 58
-}
-
-const Towers = {
-  title: "The Two Towers",
-  hours: 2,
-  minutes: 59
-}
-
-const Return = {
-  title: "The Return of the King",
-  hours: 3,
-  minutes: 21
-}
+const movies =[
+  {
+    title: "The Fellowship of the Ring",
+    hours: 2,
+    minutes: 58
+  },
+  
+  {
+    title: "The Two Towers",
+    hours: 2,
+    minutes: 59
+  },
+  
+  {
+    title: "The Return of the King",
+    hours: 3,
+    minutes: 21
+  }
+]
 
 function App() {
   return (
@@ -28,10 +30,10 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        
-        <Movie title={Fellowship.title} hours={Fellowship.hours} minutes={Fellowship.minutes} />
-        <Movie title={Towers.title} hours={Towers.hours} minutes={Towers.minutes} />
-        <Movie title={Return.title} hours={Return.hours} minutes={Return.minutes} />
+        {movies.map((movie) => <Movie 
+          title={movie.title} 
+          hours={movie.hours} 
+          minutes={movie.minutes} />)}
         
         <a
           className="App-link"
