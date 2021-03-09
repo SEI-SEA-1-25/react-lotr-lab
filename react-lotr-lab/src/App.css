@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+  
+}
+
+
+.App-logo {
+  border: 3px solid rgba(0, 0, 0, 0.801);
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px black, 0 0 30px black, 0 0 50px black, 0 0 100px black;
+  height: 50vmin;
+  pointer-events: none;
+  margin: 1rem;
+}
+h2, p {
+  padding: 0 2rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 60s linear;
+  }
+}
+
+.App-header {
+  background-image: url("https://i.pinimg.com/originals/cd/2d/6f/cd2d6f3abf87c145711f214cdd75b040.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #00000085;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgba(0, 0, 0, 0.747);
+  text-shadow: 1px 1px 3px rgb(165, 13, 13);
+  box-shadow: inset 0 0 500px black, inset 0 0 100px black, inset 0 0 200px black, inset 0 0 200px black, inset 0 0 20px black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
