@@ -2,21 +2,23 @@ import logo from './logo.svg';
 import './App.css';
 import Movie from './Movie';
 
-const rings1 = {
-  title: "The Fellowship of the Ring",
-  hour: "2h",
-  min: "58min"
-}
-const rings2 = {
-  title: "The Two Towers",
-  hour: "2h",
-  min: "59min"
-}
-const rings3 = {
-  title: "The Return of the King",
-  hour: "3hr",
-  min:  "21min"
-}
+const movies = [
+  {
+    title: "The Fellowship of the Ring",
+    hour: "2h",
+    min: "58min"
+  }, 
+  {
+    title: "The Two Towers",
+    hour: "2h",
+    min: "59min"
+  },
+  {
+    title: "The Return of the King",
+    hour: "3hr",
+    min:  "21min"
+  }
+]
 function App() {
   return (
     <div className="App">
@@ -33,21 +35,22 @@ function App() {
         >
           Learn React
         </a>
-        <Movie 
-          title={rings1.title}
-          hour={rings1.hour}
-          min={rings1.min}
+        {movies.map((movie) => <Movie title={movie.title} hour={movie.hour} min={movie.min}/>)}
+        {/* <Movie 
+          title={movies[0].title}
+          hour={movies[0].hour}
+          min={movies[0].min}
         />
         <Movie 
-          title={rings2.title}
-          hour={rings2.hour}
-          min={rings2.min}
+          title={movies[1].title}
+          hour={movies[1].hour}
+          min={movies[1].min}
         />
         <Movie 
-          title={rings3.title}
-          hour={rings3.hour}
-          min={rings3.min}
-        />
+          title={movies[2].title}
+          hour={movies[2].hour}
+          min={movies[2].min}
+        /> */}
       </header>
         
     </div>
