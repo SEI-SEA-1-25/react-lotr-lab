@@ -12,7 +12,9 @@
   pointer-events: none;
   margin: 1rem;
 }
-
+h2, p {
+  padding: 0 2rem;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
